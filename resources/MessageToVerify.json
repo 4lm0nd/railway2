@@ -1,0 +1,12 @@
+{
+  "msg login error": "There was a problem with your login and/or errors exist in your form.",
+  "msg validation": "Invalid username or password. Please try again.",
+  "msg login fail multiple times": "You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.",
+  "msg book ticket success": "Ticket booked successfully!",
+  "mgs register success": "Registration Confirmed! You can now log in to the site.",
+  "msg register error" : "There're errors in the form. Please correct the errors and try again.",
+  "msg password validation" : "Invalid password length",
+  "msg pid validation" : "Invalid ID length",
+  "msg change password success": "Your password has been updated!"
+}
+

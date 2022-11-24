@@ -1,0 +1,33 @@
+<suite name="Suite">
+    <test name="Test">
+        <classes>
+            <class name="testcases.TestCaseAdditionalPagesDisplayAfterLogin">
+				<method name ="TC06_Verify_AdditionalPages_display_after_login"></method>
+				</class>
+			<class name="testcases.TestCaseManageTicket">
+				<method name ="TC14_TC16_Verify_User_can_book_and_cancel_for_A_ticket"></method>
+				</class>
+			<class name = "testcases.TestCaseLogin">
+				<method name ="TC01_Verify_User_can_login_with_valid_data"></method>
+				<method name ="TC02_Verify_User_cannot_login_without_username"></method>
+				<method name ="TC03_Verify_User_cannot_login_with_invalid_password"></method>
+				<method name ="TC04_Verify_User_cannot_goto_BookTicket_without_login"></method>
+				<method name ="TC05_Verify_Error_message_display_when_logging_in_fails_multiple_times"></method>
+				</class>
+            <class name ="testcases.TestCaseCreateNewAccount">
+				<method name ="TC07_Verify_User_can_create_account_with_valid_data"></method>
+				<method name ="TC10_Verify_User_cannot_create_account_with_mismatched_passwords"></method>
+				<method name ="TC11_Verify_User_cannot_create_account_without_PID"></method>
+			</class>				
+            <class name ="testcases.TestCaseOpenBookTicketFromTimeTable">
+				<method name ="TC15_Verify_User_can_open_BookTicketPage_from_TrainTimeTable"></method>
+			</class>				
+            <class name ="testcases.TestCaseChangePassword">
+				<method name ="TC09_Verify_User_can_change_password"></method>
+			</class>
+			<class name ="testcases.TestCaseLoginWithNoneExistentAccount">
+				<method name ="TC08_Login_with_nonexistent_account"></method>
+			</class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
