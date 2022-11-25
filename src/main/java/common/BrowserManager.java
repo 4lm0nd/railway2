@@ -12,8 +12,8 @@ public class BrowserManager {
 
     public static WebDriver DRIVER;
 
-    public static void openBrowser(String browserName, String webDriver, String driverPath) {
-        driverManager(browserName, webDriver, driverPath);
+    public static void openBrowser() {
+        driverManager(Constant.BROWSER, Constant.WEB_DRIVER, Constant.DRIVER_PATH);
         maximizeWindow();
         deleteAllCookies();
         setImplicitlyWait(Constant.WAIT_SHORT_TIME);

@@ -17,16 +17,11 @@ public class BookTicket {
         return this.seatType;
     }
 
-    public String getTicketAmount(String ticketAmount) {
-        return this.ticketAmount;
-    }
-
-    public BookTicket(String departDate, String departStation, String arriveStation, String seatType, String ticketAmount) {
+    public BookTicket(String departDate, String departStation, String arriveStation, String seatType) {
         this.departDate = departDate;
         this.departStation = departStation;
         this.arriveStation = arriveStation;
         this.seatType = seatType;
-        this.ticketAmount = ticketAmount;
     }
 
     public void setDepartDate(String departDate) {
@@ -44,15 +39,9 @@ public class BookTicket {
     public void setSeatType(String seatType) {
         this.seatType = seatType;
     }
-
-    public void setTicketAmount(String ticketAmount) {
-        this.ticketAmount = ticketAmount;
-    }
-
     private String departDate;
     private String departStation;
     private String arriveStation;
     private String seatType;
-    private String ticketAmount;
 }
 
