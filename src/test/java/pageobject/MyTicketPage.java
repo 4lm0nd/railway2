@@ -1,6 +1,7 @@
 package pageobject;
 
 import common.BrowserManager;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.Utilities;
@@ -43,7 +44,7 @@ private WebElement getMyTable(){
 
     public String getErrorMessage(){
        String errorText =  getMyTable().getText();
-        return errorText;
+       return  StringUtils.normalizeSpace(errorText);
     }
 }
 

@@ -3,8 +3,7 @@ package pageobject;
 import common.BrowserManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
-import utilities.Utilities;
+import org.testng.Assert;
 
 public class GeneralPage {
     private final String tabMenu = "//span[text()='%s']/ancestor::a";
@@ -19,23 +18,23 @@ public class GeneralPage {
         return BrowserManager.DRIVER.findElement(By.xpath(String.format(cellTable, table, row, column)));
     }
 
-    public void openSite(String site)
-    {
+    public void openSite(String site) {
         BrowserManager.openBrowser();
         BrowserManager.DRIVER.get(site);
         BrowserManager.DRIVER.navigate();
     }
+
     public void goToTab(String tab) {
         getTabMenu(tab).click();
     }
+
     public String getTableCellValue(String table, String column, int row) {
         return getCellTable(table, column, row).getText();
     }
+
     public static void checkTextContain(String actualMsg, String expectedMsg) {
-        SoftAssert softAssert = new SoftAssert();
         try {
-            softAssert.assertEquals(actualMsg, expectedMsg);
-            softAssert.assertAll();
+            Assert.assertEquals(actualMsg,expectedMsg);
 
         } catch (AssertionError ex) {
 

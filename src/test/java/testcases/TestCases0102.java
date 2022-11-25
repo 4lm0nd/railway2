@@ -40,7 +40,7 @@ public class TestCases0102 {
         registerPage.register(email, password, confirmPassword, PID);
         logger.info("Step 1: Login");
         loginPage.login(email,password);
-        logger.info("Step2: Go to bookticket page");
+        logger.info("Step2: Go to Book Ticket page");
         generalPage.goToTab("Book ticket");
         logger.info("Step 3: Book 6 tickets");
         bookTicketPage.bookMultipleTickets(6);
@@ -61,7 +61,7 @@ public class TestCases0102 {
         logger.info("Step 3: Filter with status as paid");
         myTicketPage.filterByStatus("Paid");
         logger.info("Verify error display");
-        String expectedMessage = "Sorry, can't find any results that match your filters.Please change the filters and try again.";
+        String expectedMessage = "Sorry, can't find any results that match your filters. Please change the filters and try again.";
         generalPage.checkTextContain(myTicketPage.getErrorMessage(),expectedMessage);
     }
 }
